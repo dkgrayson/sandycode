@@ -1,0 +1,198 @@
+html,
+body {
+  height: 100%;
+}
+
+.terminal {
+  background: #2B2B2B;
+  color: #FFF;
+  height: 300px;
+  width: 400px;
+  margin: auto;
+  font-family: monospace;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  background: #1E1E1E;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.button.close {
+  background: #FF5F56;
+}
+
+.button.minimize {
+  background: #FFBD2E;
+}
+
+.button.maximize {
+  background: #27C93F;
+}
+
+.title {
+  font-size: 12px;
+}
+
+.text {
+  background: #000;
+  height: 200px;
+  padding: 10px;
+  overflow: auto;
+}
+
+.prompt {
+  float: left;
+  margin-right: 5px;
+  color: #0F0;
+}
+
+textarea {
+  background: transparent;
+  color: #FFF;
+  border: none;
+  font-family: monospace;
+  resize: none;
+  width: calc(100% - 20px);
+  height: calc(100% - 15px);
+  outline: none;
+}
+
+.button-row {
+  background: #1E1E1E;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+button {
+  background: #000;
+  color: #FFF;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: monospace;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #444;
+}
+
+
+
+/* Styling for the tab buttons */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 8px 16px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: #555;
+}
+
+/* Styling for the code inputs */
+.code-input {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 92px);
+}
+
+.code {
+  flex: 1;
+  margin: 0;
+  padding: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  border: none;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  resize: none;
+}
+
+.code.html {
+  order: 1;
+}
+
+.code.css {
+  order: 2;
+}
+
+.code.js {
+  order: 3;
+}
+
+/* Styling for the preview iframe */
+#preview {
+  width: 100%;
+  height: calc(100vh - 92px);
+  border: none;
+}
+
+/* Styling for the error message */
+#error {
+  display: none;
+  padding: 8px;
+  color: red;
+  font-size: 16px;
+}
+
+/* Styling for the save/load buttons */
+#save,
+#load {
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#save {
+  background-color: #00cc00;
+  color: #fff;
+  border: none;
+}
+
+#load {
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+}
+
+/* Styling for the add tab button */
+#add-tab {
+  padding: 8px 16px;
+  margin-top: 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#add-tab:hover {
+  background-color: #ccc;
+}
