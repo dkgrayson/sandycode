@@ -1,0 +1,21 @@
+  {
+    "name": "Code Sandbox",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "A code sandbox that supports JavaScript, HTML, and CSS.",
+    "permissions": [
+      "tabs",
+      "activeTab",
+      "storage",
+      "scripting"
+    ],
+    "icons": {
+      "16": "16.png",
+      "48": "48.png",
+      "128": "128.png"
+    },
+    "action": {
+      "default_icon": "48.png",
+      "default_popup": "popup.html"
+    }
+  }
